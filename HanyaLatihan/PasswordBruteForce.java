@@ -8,13 +8,9 @@ public class PasswordBruteForce {
             // pengecekan kesamaan simbol dari 0 ~ Character.MAX_VALUE dalam bentuk integer
             for (int j = 0; j <= Character.MAX_VALUE; j++) {
                 // kondisi kalau simbolnya benar maka j dikonversi ke char agar berubah jadi simbol dan dimasukkan ke string
-                if ((int) password.charAt(i) == j) {
-                    getPassword += (char) j; // Konversi ASCII (Simbol)
-                }
+                if ((int) password.charAt(i) == j) getPassword += (char) j; // Konversi ASCII (Simbol)
             }
         }
-
-        // menampilkan hasil
-        System.out.println("Password Ditemukan: "+getPassword);
+        System.out.println("Password Ditemukan: "+getPassword); // menampilkan hasil
     }
 }
