@@ -4,7 +4,7 @@ public class PasswordBruteForceAnimated {
         String getPassword = "";
 
         if (password.isEmpty()) {
-            System.out.println("Password tidak boleh koson!");
+            System.out.println("Password tidak boleh kosong!");
             return;
         }
         if (!getPassword.isEmpty()) {
